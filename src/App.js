@@ -1,10 +1,10 @@
-import Pokecard from './Pokecard';
-import './App.css';
+import Pokecard from "./Pokecard";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Pokecard /> 
+      <Pokecard id={4} name="Charmander" type="fire" xp={62} />
     </div>
   );
 }
