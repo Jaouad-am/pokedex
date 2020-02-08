@@ -7,10 +7,10 @@ render(){
     let imgSrc = `${Poke_API}${this.props.id}.png`; 
     return(
         <div className='Pokecard'>
-            <h1>{this.props.name}</h1>
+            <h1 className='Pokecard-title'>{this.props.name}</h1>
             <img src={imgSrc} alt={this.props.name} />
-            <div>Type: {this.props.type}</div>
-            <div>XP: {this.props.xp}</div>
+            <div className='Pokecard-data'>Type: {this.props.type}</div>
+            <div className='Pokecard-data'>XP: {this.props.xp}</div>
         </div>
     );
 }
