@@ -12,7 +12,9 @@ render(){
     return(
         <div className='Pokecard'>
             <h1 className='Pokecard-title'>{this.props.name}</h1>
-            <img src={FancyImgSrc} alt={this.props.name} />
+            <div className='Pokecard-image'>
+                <img src={FancyImgSrc} alt={this.props.name} />
+            </div> 
             <div className='Pokecard-data'>Type: {this.props.type}</div>
             <div className='Pokecard-data'>XP: {this.props.xp}</div>
         </div>
